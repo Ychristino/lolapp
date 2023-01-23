@@ -1,0 +1,59 @@
+h1{
+    font-size: 1.5rem;
+    font-weight: 300;
+}
+h2{
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
+}
+
+.summoner-profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100ch;
+}
+
+.maestry-list{
+    display: inline-block;
+    text-align: center;
+    width: 15ch;
+}
+
+.elo{
+    width: 20ch;
+}
+.elo-ico{
+    background-image: none;
+    width: 100%;
+    height: 120px;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.bronze{
+    background-image: url('./ranked-emblems/Emblem_Bronze.png');
+}
+.silve{
+    background-image: url('./ranked-emblems/Emblem_Silver.png');
+}
+.gold{
+    background-image: url('./ranked-emblems/Emblem_Gold.png');
+}
+.platinum{
+    background-image: url('./ranked-emblems/Emblem_Platinum.png');
+}
+.diamond{
+    background-image: url('./ranked-emblems/Emblem_Diamond.png');
+}
+.master{
+    background-image: url('./ranked-emblems/Emblem_Master.png');
+}
+.grandmaster{
+    background-image: url('./ranked-emblems/Emblem_Grandmaster.png');
+}
+.challenger{
+    background-image: url('./ranked-emblems/Emblem_Challenger.png');
+}
