@@ -6,6 +6,7 @@ import Badge from 'react-bootstrap/Badge';
 import Player_Header_Profile from '../Models/Player_Header_Profile';
 import Ranked_Badge_Info from '../Models/Ranked_Header_Info';
 import Champion_Maestry from '../Models/Champion_Maestry';
+import Recent_Played from '../Models/Recent_Played';
 
 import ACCOUNTS from '../Constants/Accounts';
 import SERVER_ROUTE from '../Constants/ApiServerRoutes';
@@ -26,12 +27,16 @@ function Account_List(){
         const res = await getProfile(SERVER_ROUTE.PLATFORM.BR1, account);
         setAccountList(oldList=> [...oldList, res])
     }
+
     return(
         <>
-            <Accordion defaultActiveKey="0" flush alwaysOpen>
+            <Accordion flush alwaysOpen>
                 {accountList.map((account, key)=>
-                <Row key={key}>
-                    <Accordion.Item eventKey={key} key={key}>
+                <Row>
+                    <Accordion.Item 
+                        key={key}
+                        eventKey={key}
+                    >
                         <Accordion.Header> 
                             <Col>  
                                 <Player_Header_Profile
@@ -43,7 +48,7 @@ function Account_List(){
                             {account.rank.length != 0 
                             ? account.rank.sort((a, b)=>
                                 ((a['queue'] > b['queue']) ? -1 : ((a['queue'] < b['queue']) ? 1 : 0))
-                            ).map(rank=>
+                            ).map((rank)=>
                                 <Col>
                                     <Ranked_Badge_Info 
                                         queue={rank.queueType}

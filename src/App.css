@@ -7,6 +7,11 @@ h2{
     font-weight: 300;
     color: white;
 }
+h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: black;
+}
 
 .summoner-profile{
     display: flex;
@@ -36,7 +41,7 @@ h2{
 .bronze{
     background-image: url('./ranked-emblems/Emblem_Bronze.png');
 }
-.silve{
+.silver{
     background-image: url('./ranked-emblems/Emblem_Silver.png');
 }
 .gold{

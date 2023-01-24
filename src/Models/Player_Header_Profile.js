@@ -14,7 +14,7 @@ export default function Player_Header_Profile(props){
     return(
         <>
             <div className='summoner-profile'>
-                <h2>{level}</h2>
+                <h3>{level}</h3>
                 
                 <Figure
                     className='summoner-profile'
