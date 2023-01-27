@@ -1,1 +1,1 @@
-export const API_KEY = 'RGAPI-13c82af8-bd90-4a5a-98ee-977643f34b3f'; 
+export const API_KEY = process.env.REACT_APP_RIOT_API_KEY; 

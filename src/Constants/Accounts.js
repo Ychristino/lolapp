@@ -27,9 +27,6 @@ const ACCOUNTS = [
 		"name":"ADVOGADO WILHELM"
 	},
 	{
-		"name":"Adriano Imperor"
-	},
-	{
 		"name":"Goldztein"
 	}
 ]

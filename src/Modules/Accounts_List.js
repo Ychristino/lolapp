@@ -22,7 +22,7 @@ function Account_List(){
             findAccount(account.name),
         )
     },[])
-    
+        
     const findAccount = async(account) => {
         const res = await getProfile(SERVER_ROUTE.PLATFORM.BR1, account);
         setAccountList(oldList=> [...oldList, res])
