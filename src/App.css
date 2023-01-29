@@ -1,34 +1,25 @@
 h1{
     font-size: 1.5rem;
-    font-weight: 300;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 1rem;
 }
 h2{
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 300;
-    color: white;
+    color: black;
 }
 h3{
     font-size: 1.5rem;
     font-weight: 300;
     color: black;
 }
-
-.summoner-profile{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100ch;
+h4{
+    font-size: 1rem;
+    font-weight: 300;
+    color: white;
 }
 
-.maestry-list{
-    display: inline-block;
-    text-align: center;
-    width: 15ch;
-}
-
-.elo{
-    width: 20ch;
-}
 .elo-ico{
     background-image: none;
     width: 100%;

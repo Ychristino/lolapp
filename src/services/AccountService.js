@@ -10,7 +10,7 @@ export const getProfile = async (server_route, name)=> {
     const rank          = await getRank(server_route, summoner)
     const top_maestry   = await getTopMaestry(server_route, summoner)
     const history       = await getHistory(server_route, summoner)
-
+    
     return {summoner, rank, history, top_maestry }
 }
 

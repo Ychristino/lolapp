@@ -28,6 +28,9 @@ const ACCOUNTS = [
 	},
 	{
 		"name":"Goldztein"
+	},
+	{
+		"name":"Dariven"
 	}
 ]
 export default ACCOUNTS;
